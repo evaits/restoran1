@@ -236,7 +236,7 @@ body {
 }
 
 /*History*/
-.history {
+#history {
     margin-top: 150px;
     padding-bottom: 200px;
 }
@@ -329,7 +329,7 @@ body {
 }
 
 /*Black-block*/
-.black-block {
+#black-block {
     background-image: url(block-fon.png);
     padding-top: 80px;
     padding-bottom: 80px;
