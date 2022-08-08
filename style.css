@@ -376,9 +376,43 @@ body {
     background-color: rgb(180, 6, 6);
 }
 
+/* Eat */
+#eat {
+    padding-top: 132px;
+}
 
+.eat-title {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 143px;
+}
 
+.eat-title span {
+    color: #D67E34;
+}
 
-.eat {
-    height: 100px;
+.eat-burgers {
+    display: flex;
+}
+
+#burger img{
+    height: 478px;
+}
+
+.burger-items {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin: 0 0 29px 20px;
+}
+
+.burger-text {
+    margin-left: 26px;
 }
