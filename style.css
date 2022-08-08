@@ -238,6 +238,7 @@ body {
 /*History*/
 .history {
     margin-top: 150px;
+    padding-bottom: 200px;
 }
 
 #history-title {
@@ -325,4 +326,59 @@ body {
     z-index: -1;
     top: 105px;
     left: 303px;
+}
+
+/*Black-block*/
+.black-block {
+    background-image: url(block-fon.png);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#left-title {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    color: #D67E34;
+    width: 601px;
+}
+
+#left-text {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 33px;
+    color: white;
+}
+
+.block-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#btn-black-block {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 41px;
+    font-weight: 700;
+    line-height: 19px;
+    font-size: 14px;
+    background-color: rgba(255, 116, 0, 1);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s linear;
+}
+
+#btn-black-block:hover {
+    background-color: rgb(180, 6, 6);
+}
+
+
+
+
+.eat {
+    height: 100px;
 }
