@@ -1,7 +1,6 @@
 body {
     background: #f9f8f8;
     margin: 0;
-    height: 2000px;
 }
 
 
@@ -379,6 +378,8 @@ body {
 /* Eat */
 #eat {
     padding-top: 132px;
+    padding-bottom: 152px;
+    justify-content: center;
 }
 
 .eat-title {
@@ -415,4 +416,120 @@ body {
 
 .burger-text {
     margin-left: 26px;
+}
+
+/* Menu */
+#menu {
+    background-image: url(bg-menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 226px;
+}
+
+.menu-title {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 98px;
+    padding-bottom: 138px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center
+}
+
+.menu-item {
+    background-color: #ffffff;
+    width: 33%;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-recom {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 7px;
+    padding-bottom: 11px;
+    padding-right: 11px;
+    padding-left: 12px;
+    background-color: #D67E34;
+    float: left;
+}
+
+.menu-img {
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.menu-png {
+    border-radius: 50%;
+}
+
+.cena-png {
+    position: absolute;
+    left: 185px;
+    top: 207px;
+}
+
+.cena-text {
+    font-family: 'Cookie';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    position: absolute;
+    bottom: 51px;
+    right: 86px;
+    color: #ffffff;
+}
+
+
+
+.menu-text {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    padding-bottom: 17px;
+}
+
+.menu-subtext {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+
+.menu-btn {
+    margin-bottom: 40px;
+}
+
+.menu-btn a {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #D67E34;
+    padding: 14px 68px;
+    box-shadow: 5px 5px 10px 0px #00000040;
+    transition: background-color 0.3s linear;
+}
+
+.menu-btn a:hover {
+    background-color: rgb(180, 6, 6);
 }
