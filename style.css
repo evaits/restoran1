@@ -14,6 +14,8 @@ body {
 .header {
     background-image: url(bg.png);
     height: 120vh;
+    background-position: center;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
@@ -120,7 +122,8 @@ body {
 
 #header-text-1 {
     font-size: 70px;
-    line-height: 91px;
+    margin-top: 20px;
+    margin-bottom: 13px;
 }
 
 #header-text-2 {
@@ -338,6 +341,7 @@ body {
 #black-block {
     background-image: url(block-fon.png);
     background-size: cover;
+    background-position: center;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -433,6 +437,8 @@ body {
     background-image: url(bg-menu.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
     padding-bottom: 226px;
 }
 
@@ -664,6 +670,8 @@ body {
     height: 100vw;
     background-repeat: no-repeat;
     background-image: url(foot-bg.png);
+    background-position: center;
+    background-attachment: fixed; 
 }
 
 /* Adaptations */
@@ -672,11 +680,142 @@ body {
         display: none;
     }
 
-    .header-down {
-        display: none;
+}
+
+/* Header-line */
+@media (max-width:1220px) {
+    .header-title {
+        text-align: center;
+        right: 0;
     }
 
+    #header-text-2::before {
+        top: 159px;
+        left: 677px;
+    }
+
+    #header-text-2::after {
+        top: 159px;
+        left: 357px;
+    }
 }
+
+@media (max-width:1189px) {
+
+    #header-text-2::before {
+        top: 159px;
+        left: 524px;
+    }
+
+    #header-text-2::after {
+        top: 159px;
+        left: 212px;
+    }
+}
+
+@media (max-width:817px) {
+
+    #header-text-2::before {
+        top: 159px;
+        left: 423px;
+    }
+
+    #header-text-2::after {
+        top: 159px;
+        left: 116px;
+    }
+}
+
+@media (max-width:645px) {
+
+    #header-text-2::before {
+        top: 159px;
+        left: 375px;
+    }
+
+    #header-text-2::after {
+        top: 159px;
+        left: 65px;
+    }
+}
+
+@media (max-width:600px) {
+    .header-title {
+        font-size: 40px;
+    }
+
+    #header-text-1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:550px) {
+
+    #header-text-2::before {
+        top: 216px;
+        left: 275px;
+    }
+
+    #header-text-2::after {
+        top: 216px;
+        left: -33px;
+    }
+}
+
+@media (max-width:400px) {
+    #header-text-2 {
+        font-size: 10px;
+    }
+
+    #header-text-2::before {
+        top: 216px;
+        left: 238px;
+    }
+    
+    #header-text-2::after {
+        top: 216px;
+        left: 1px;
+        } 
+}
+
+@media (max-width:350px) {
+    .header-title {
+        font-size: 30px;
+    }
+
+    #header-text-1 {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+    
+    #header-text-2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #header-text-2::before {
+        width: 40px;
+        left: 234px;
+    }
+    
+    #header-text-2::after {
+        width: 40px;
+        left: 25px;
+        } 
+
+}
+
+@media (max-width:300px) {
+    #header-text-2::before {
+        display: none;
+    }
+    
+    #header-text-2::after {
+        display: none;
+        } 
+}
+
+
 /* Cards */
 @media (max-width:1190px) {
     .cards {
@@ -951,6 +1090,10 @@ body {
 }
 
 @media (max-width:550px) {
+    #history {
+        margin-top: 0;
+    }
+
     #history-number {
         display: block;
     }
@@ -1161,6 +1304,10 @@ body {
 @media (max-width:900px) {
     #eat {
         padding-bottom: 80px;
+    }
+
+    #burger {
+        display: none;
     }
 
     .eat-burgers {
