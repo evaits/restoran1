@@ -13,7 +13,7 @@ body {
 
 .header {
     background-image: url(bg.png);
-    height: 120vh;
+    height: 800px;
     background-position: center;
     width: 100vw;
     background-repeat: no-repeat;
@@ -38,6 +38,10 @@ body {
     color: white;
     font-weight: 700;
     text-decoration: none;
+}
+
+#checkbox-toggle {
+    display: none;
 }
 
 .nav a{
@@ -437,8 +441,7 @@ body {
     background-image: url(bg-menu.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed; 
+    background-position: left;
     padding-bottom: 226px;
 }
 
@@ -671,19 +674,70 @@ body {
     background-repeat: no-repeat;
     background-image: url(foot-bg.png);
     background-position: center;
-    background-attachment: fixed; 
 }
 
 /* Adaptations */
+
+/* Header-line */
 @media (max-width:1220px) {
-    .header-line {
+
+    .header {
+        background-position: left;
+    }
+
+}
+
+@media (max-width:1190px) {
+
+    .header-img {
+        margin-right: 80px;
+    }
+
+    .cart {
+        display: none;
+    }
+    
+    .phone {
+        display: none;
+    }
+
+    .btn {
+        margin-left: 1px;
+    }
+
+}
+
+@media (max-width:817px) {
+    
+    .btn {
         display: none;
     }
 
 }
 
-/* Header-line */
+@media (max-width:645px) {
+    
+    .header-img {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width:556px) {
+
+    .header-img {
+        margin: 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+}
+
+/* Header-down */
 @media (max-width:1220px) {
+
     .header-title {
         text-align: center;
         right: 0;
@@ -749,7 +803,19 @@ body {
     }
 }
 
+@media (max-height:700px) {
+    
+}
+
 @media (max-width:550px) {
+
+    .header-title {
+        font-size: 35px;
+    }
+
+    #header-text-1 {
+        margin-top: 0px;
+    }
 
     #header-text-2::before {
         top: 216px;
@@ -763,6 +829,7 @@ body {
 }
 
 @media (max-width:400px) {
+
     #header-text-2 {
         font-size: 10px;
     }
@@ -868,6 +935,7 @@ body {
 }
 
 @media (max-width:550px) {
+
     #card-1 {
         padding: 20px 0;
     }
