@@ -44,6 +44,40 @@ body {
     display: none;
 }
 
+.bar {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.bar-line {
+    background-color:#D67E34;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.bar-line::after,
+.bar-line::before {
+    background-color:#D67E34;
+    display: block;
+    content: "";
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+}
+
+.bar-line::after {
+    top: -7px;
+}
+
+.bar-line::before {
+    top: 7px;
+}
+
+
 .nav a{
     line-height: 19px;
     font-size: 14px;
@@ -725,15 +759,94 @@ body {
 
 @media (max-width:556px) {
 
+    .header-img img{
+        width: 60px;
+    }
+    
+    .header-img {
+        top: 59px;
+    }
+
     .header-img {
         margin: 0;
     }
 
-    .navbar {
-        display: none;
+    .nav {
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        padding-right: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .nav a {
+        display: block;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+
+    .bar {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #checkbox-toggle:checked ~ .nav {
+        display: block;
+        max-height: 200px;
+        height: 120px;
+        line-height: 100px;
+        transition: all 1.5s;
+        top: 150px;
+    }
+
+    #checkbox-toggle:checked ~ .bar .bar-line {
+        background-color: transparent;
+    }
+
+    #checkbox-toggle:checked ~ .bar .bar-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #checkbox-toggle:checked ~ .bar .bar-line::after {
+        transform: rotate(45deg);
+        top: 0%;
     }
 
 }
+
+@media (max-width:550px) {
+    
+    #checkbox-toggle:checked ~ .nav {
+        top: 130px;
+    }
+
+    .header-img {
+        position: absolute;
+        left: 80px;
+        top: 59px;
+    }
+
+    .bar {
+        position: absolute;
+        right: 80px;
+        top: 70px;
+    }
+}
+
+@media (max-width:330px) {
+
+    .header-img {
+        left: 40px;
+    }
+
+    .bar {
+        right: 40px;
+    }
+}
+
 
 /* Header-down */
 @media (max-width:1220px) {
@@ -811,6 +924,7 @@ body {
 
     .header-title {
         font-size: 35px;
+        padding-top: 40px;
     }
 
     #header-text-1 {
@@ -818,12 +932,12 @@ body {
     }
 
     #header-text-2::before {
-        top: 216px;
+        top: 235px;
         left: 275px;
     }
 
     #header-text-2::after {
-        top: 216px;
+        top: 235px;
         left: -33px;
     }
 }
@@ -835,12 +949,12 @@ body {
     }
 
     #header-text-2::before {
-        top: 216px;
+        top: 235px;
         left: 238px;
     }
     
     #header-text-2::after {
-        top: 216px;
+        top: 235px;
         left: 1px;
         } 
 }
@@ -862,11 +976,13 @@ body {
 
     #header-text-2::before {
         width: 40px;
+        top: 255px;
         left: 234px;
     }
     
     #header-text-2::after {
         width: 40px;
+        top: 255px;
         left: 25px;
         } 
 
